@@ -74,3 +74,4 @@ CREATE TABLE orders
 	FOREIGN KEY (StoreId) REFERENCES store(StoreId)
 	)
 GO
+--xx--
