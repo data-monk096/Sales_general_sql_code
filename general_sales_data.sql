@@ -1,3 +1,5 @@
+--Created customer table
+
 CREATE TABLE customer
 	(
 	UserId int identity(1000,1) primary key,
@@ -9,8 +11,9 @@ CREATE TABLE customer
 	HomeAddress varchar(150)
 	)
 GO
-
-
+	
+--created seller table
+	
 CREATE TABLE seller
 	(
 	UserId int identity(2000,1) primary key,
@@ -22,7 +25,9 @@ CREATE TABLE seller
 	HomeAddress varchar(150)
 	)
 GO
-
+	
+--created store table
+	
 CREATE TABLE store
 	(
 	StoreId int primary key,
@@ -31,7 +36,10 @@ CREATE TABLE store
 	StoreType varchar(50)
 	)
 GO
-
+	
+--created product table and referenced seller id to user id of seller table 
+--and storeid to store id of store table
+	
 CREATE TABLE product
 	(
     ProductId int primary key,
@@ -45,6 +53,10 @@ CREATE TABLE product
 	)
 GO
 
+--created orders table and referenced customer id to userid of customer table
+--referenced salesmanid to seller userid
+--referenced product id to productid of product table
+--referenced storeid to storeid of store table
 
 CREATE TABLE orders
 	(
