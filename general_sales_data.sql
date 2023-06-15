@@ -3,11 +3,11 @@
 CREATE TABLE customer
 	(
 	UserId int identity(1000,1) primary key,
-	UserName varchar(50),
+	UserName varchar(50) unique,
 	FirstName varchar(50),
 	LastName varchar(50),
-	Email varchar(100),
-	ContactNumber varchar(20),
+	Email varchar(100) unique,
+	ContactNumber varchar(20) unique,
 	HomeAddress varchar(150)
 	)
 GO
@@ -17,11 +17,11 @@ GO
 CREATE TABLE seller
 	(
 	UserId int identity(2000,1) primary key,
-	UserName varchar(50),
+	UserName varchar(50) unique,
 	FirstName varchar(50),
 	LastName varchar(50),
-	Email varchar(100),
-	ContactNumber varchar(20),
+	Email varchar(100) unique,
+	ContactNumber varchar(20) unique,
 	HomeAddress varchar(150)
 	)
 GO
