@@ -45,7 +45,7 @@ CREATE TABLE product
     ProductId int primary key,
     ProductName varchar(50),
     ProductType varchar(100),
-    ProductPrice int,
+    ProductPrice bigint,
 	StoreId int,
     SellerId int,
     FOREIGN KEY (SellerId) REFERENCES seller(UserId),
@@ -67,7 +67,7 @@ CREATE TABLE orders
 	StoreId int,
 	OrderQuantity int,
 	OrderDate date,
-	TotalPrice int
+	TotalPrice bigint
 	FOREIGN KEY (CustomerId) REFERENCES customer(UserId),
 	FOREIGN KEY (SalesmanID) REFERENCES seller(UserId),
 	FOREIGN KEY (ProductId) REFERENCES product(ProductId),
