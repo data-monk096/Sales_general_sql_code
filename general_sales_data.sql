@@ -5,7 +5,7 @@ CREATE TABLE customer
 	FirstName varchar(50),
 	LastName varchar(50),
 	Email varchar(100),
-	ContactNumber int,
+	ContactNumber numeric,
 	HomeAddress varchar(150)
 	)
 GO
