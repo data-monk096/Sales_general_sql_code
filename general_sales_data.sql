@@ -7,7 +7,7 @@ CREATE TABLE customer
 	FirstName varchar(50),
 	LastName varchar(50),
 	Email varchar(100),
-	ContactNumber numeric,
+	ContactNumber varchar(20),
 	HomeAddress varchar(150)
 	)
 GO
@@ -21,7 +21,7 @@ CREATE TABLE seller
 	FirstName varchar(50),
 	LastName varchar(50),
 	Email varchar(100),
-	ContactNumber int,
+	ContactNumber varchar(20),
 	HomeAddress varchar(150)
 	)
 GO
